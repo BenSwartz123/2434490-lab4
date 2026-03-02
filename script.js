@@ -44,7 +44,7 @@ async function searchCountry(countryName) {
                 borderingCountries.appendChild(div);
             }
         } else {
-            borderingCountries.innerHTML = '<p>No bordering countries</p>';
+            borderingCountries.innerHTML = '<p>This country has no bordering countries</p>';
         }
 
     } catch (error) {
@@ -68,3 +68,4 @@ countryInput.addEventListener('keydown', (e) => {
         if (country) searchCountry(country);
     }
 });
+
