@@ -16,7 +16,7 @@ async function searchCountry(countryName) {
 
     try {
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
-        if (!response.ok) throw new Error('Country not found');
+        if (!response.ok) throw new Error('Country not found with that name');
         
         const data = await response.json();
         const country = data[0];
@@ -68,4 +68,5 @@ countryInput.addEventListener('keydown', (e) => {
         if (country) searchCountry(country);
     }
 });
+
 
