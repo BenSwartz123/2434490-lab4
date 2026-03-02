@@ -1,7 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffcc00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffaa00;
+}
+
+/* Country Card */
+.country-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Border Grid */
+.border-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
 /* Spinner */
 .spinner {
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #3498db;
+    border: 6px solid #eee;
+    border-top: 6px solid #ffcc00;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -14,33 +71,12 @@
     100% { transform: rotate(360deg); }
 }
 
-/* Country Card */
-.country-card {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* Border Grid */
-.border-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 15px;
-    margin: 20px;
-}
-
-/* Error Message */
 .error {
-    color: red;
+    color: #ff4d4d;
     font-weight: bold;
-    text-align: center;
     margin-top: 20px;
 }
 
-/* Hidden state */
 .hidden {
     display: none;
 }
